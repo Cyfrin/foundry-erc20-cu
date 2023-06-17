@@ -21,7 +21,6 @@ This is a section of the Cyfrin Foundry Solidity Course.
 - [Formatting](#formatting)
 - [Thank you!](#thank-you)
 
-This project is apart of the Hardhat FreeCodeCamp video.
 
 # Getting Started
 
