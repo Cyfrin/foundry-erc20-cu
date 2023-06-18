@@ -21,7 +21,6 @@ This is a section of the Cyfrin Foundry Solidity Course.
 - [Formatting](#formatting)
 - [Thank you!](#thank-you)
 
-This project is apart of the Hardhat FreeCodeCamp video.
 
 # Getting Started
 
@@ -36,7 +35,7 @@ This project is apart of the Hardhat FreeCodeCamp video.
 ## Quickstart
 
 ```
-git clone https://github.com/PatrickAlphaC/foundry-erc20-f23
+git clone https://github.com/Cyfrin/foundry-erc20-f23
 cd foundry-erc20-f23
 forge install 
 forge build
