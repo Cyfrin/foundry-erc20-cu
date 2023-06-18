@@ -2,6 +2,8 @@
 
 This is a section of the Cyfrin Foundry Solidity Course.
 
+*[⭐️ (7:08:04) | Lesson 10: Foundry ERC20](https://www.youtube.com/watch?v=sas02qSFZ74&t=25684s)*
+
 - [Foundry ERC20](#foundry-erc20)
 - [Getting Started](#getting-started)
   - [Requirements](#requirements)
