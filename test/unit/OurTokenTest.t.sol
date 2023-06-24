@@ -2,8 +2,8 @@
 
 pragma solidity ^0.8.19;
 
-import {DeployOurToken} from "../script/DeployOurToken.s.sol";
-import {OurToken} from "../src/OurToken.sol";
+import {DeployOurToken} from "../../script/DeployOurToken.s.sol";
+import {OurToken} from "../../src/OurToken.sol";
 import {Test, console} from "forge-std/Test.sol";
 import {StdCheats} from "forge-std/StdCheats.sol";
 
