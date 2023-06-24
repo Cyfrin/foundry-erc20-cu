@@ -3,7 +3,6 @@ pragma solidity 0.8.19;
 
 import {Script} from "forge-std/Script.sol";
 import {OurToken} from "../src/OurToken.sol";
-import {console} from "forge-std/console.sol";
 
 contract DeployOurToken is Script {
     uint256 public constant INITIAL_SUPPLY = 1_000_000 ether; // 1 million tokens with 18 decimal places

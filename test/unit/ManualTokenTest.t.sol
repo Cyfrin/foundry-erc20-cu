@@ -4,7 +4,7 @@ pragma solidity ^0.8.19;
 
 import {DeployManualToken} from "../../script/DeployManualToken.s.sol";
 import {ManualToken} from "../../src/ManualToken.sol";
-import {Test, console} from "forge-std/Test.sol";
+import {Test} from "forge-std/Test.sol";
 import {StdCheats} from "forge-std/StdCheats.sol";
 
 contract ManualTokenTest is StdCheats, Test {
