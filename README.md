@@ -49,6 +49,19 @@ If you can't or don't want to run and install locally, you can work with this re
 
 # Usage
 
+## OpenZeppelin
+
+[OpenZeppelin Contracts Docs](https://docs.openzeppelin.com/contracts/4.x/)
+<br><br>
+[OpenZeppelin GitHub Repo](https://github.com/OpenZeppelin/openzeppelin-contracts)
+<br>
+
+### Installing OpenZeppelin Contracts Package
+
+```bash
+forge install OpenZeppelin/openzeppelin-contracts --no-commit
+```
+
 ## Start a local node
 
 ```
