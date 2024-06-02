@@ -6,7 +6,7 @@ remappings = ['@openzeppelin=lib/openzeppelin-contracts/']
 
 [etherscan]
 mainnet = { key = "${ETHERSCAN_API_KEY}" }
-sepolia = {key = "${ETHERSCAN_API_KEY}"}
+sepolia = { key = "${ETHERSCAN_API_KEY}" }
 
 [rpc_endpoints]
 sepolia = "${SEPOLIA_RPC_URL}"
