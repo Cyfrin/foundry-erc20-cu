@@ -10,6 +10,8 @@ This is a section of the Cyfrin Foundry Solidity Course.
   - [Quickstart](#quickstart)
     - [Optional Gitpod](#optional-gitpod)
 - [Usage](#usage)
+  - [OpenZeppelin](#openzeppelin)
+    - [Installing OpenZeppelin Contracts Package](#installing-openzeppelin-contracts-package)
   - [Start a local node](#start-a-local-node)
   - [Deploy](#deploy)
   - [Deploy - Other Network](#deploy---other-network)
