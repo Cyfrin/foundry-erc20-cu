@@ -5,14 +5,15 @@ pragma solidity ^0.8.19;
 import {DeployOurToken} from "../script/DeployOurToken.s.sol";
 import {OurToken} from "../src/OurToken.sol";
 import {Test, console} from "forge-std/Test.sol";
-import {StdCheats} from "forge-std/StdCheats.sol";
+import {ZkSyncChainChecker} from "lib/foundry-devops/src/ZkSyncChainChecker.sol";
 
 interface MintableToken {
     function mint(address, uint256) external;
 }
 
-contract OurTokenTest is StdCheats, Test {
+contract OurTokenTest is Test, ZkSyncChainChecker {
     uint256 BOB_STARTING_AMOUNT = 100 ether;
+    uint256 public constant INITIAL_SUPPLY = 1_000_000 ether; // 1 million tokens with 18 decimal places
 
     OurToken public ourToken;
     DeployOurToken public deployer;
@@ -22,17 +23,21 @@ contract OurTokenTest is StdCheats, Test {
 
     function setUp() public {
         deployer = new DeployOurToken();
-        ourToken = deployer.run();
+        if (!isZkSyncChain()) {
+            ourToken = deployer.run();
+        } else {
+            ourToken = new OurToken(INITIAL_SUPPLY);
+            ourToken.transfer(msg.sender, INITIAL_SUPPLY);
+        }
 
         bob = makeAddr("bob");
         alice = makeAddr("alice");
 
-        deployerAddress = vm.addr(deployer.deployerKey());
-        vm.prank(deployerAddress);
+        vm.prank(msg.sender);
         ourToken.transfer(bob, BOB_STARTING_AMOUNT);
     }
 
-    function testInitialSupply() public {
+    function testInitialSupply() public view {
         assertEq(ourToken.totalSupply(), deployer.INITIAL_SUPPLY());
     }
 
