@@ -49,7 +49,8 @@ contract OurTokenTest is Test, ZkSyncChainChecker {
     function testAllowances() public {
         uint256 initialAllowance = 1000;
 
-        // Alice approves Bob to spend tokens on her behalf
+        // Bob approves Alice to spend tokens on his behalf
+
         vm.prank(bob);
         ourToken.approve(alice, initialAllowance);
         uint256 transferAmount = 500;
