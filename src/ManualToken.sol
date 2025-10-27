@@ -47,6 +47,7 @@ contract ManualToken {
     ) {
         totalSupply = initialSupply * 10 ** uint256(decimals); // Update total supply with the decimal amount
         balanceOf[msg.sender] = totalSupply; // Give the creator all initial tokens
+        emit Transfer(address(0), msg.sender, totalSupply); //Emitting the transfer event since we transferred the initial supply to the creator
         name = tokenName; // Set the name for display purposes
         symbol = tokenSymbol; // Set the symbol for display purposes
     }
