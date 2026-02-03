@@ -61,7 +61,7 @@ If you can't or don't want to run and install locally, you can work with this re
 ### Installing OpenZeppelin Contracts Package
 
 ```bash
-forge install OpenZeppelin/openzeppelin-contracts --no-commit
+forge install OpenZeppelin/openzeppelin-contracts
 ```
 
 ## Start a local node
